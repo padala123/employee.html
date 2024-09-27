@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Company Directory Portal</h1>
+    </header>
+
+    <!-- Main Content Section with Flexbox Layout -->
+    <div class="main-content">
+        <!-- Employee Registration Form Section -->
+        <section id="registration">
+            <h2>Employee Registration Form</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="HR">HR</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                </select><br>
+
+                <label for="employee-id">Employee ID:</label>
+                <input type="number" id="employee-id" name="employee-id" required><br>
+
+                <label for="profile-pic-url">Profile Picture URL:</label>
+                <input type="url" id="profile-pic-url" name="profile-pic-url"><br>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Employee List Section -->
+        <div id="employee-list">
+            <h3>Employee List</h3>
+            <ol>
+                <li><a href="mailto:employee1@example.com">John Doe (employee1@example.com)</a></li>
+                <li><a href="mailto:employee2@example.com">Jane Smith (employee2@example.com)</a></li>
+            </ol>
+        </div>
+
+        <!-- Employee Details Table Section -->
+        <div id="employee-details">
+            <h3>Employee Details</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Employee ID</th>
+                        <th>Department</th>
+                        <th>Profile Picture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>101</td>
+                        <td>Engineering</td>
+                        <td><img src="https://via.placeholder.com/50" alt="John Doe"></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>102</td>
+                        <td>Marketing</td>
+                        <td><img src="https://via.placeholder.com/50" alt="Jane Smith"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Embedded Map Section -->
+    <section id="location-map">
+        <h2>Company Location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345082574!2d144.9559283153213!3d-37.81720997975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771e8b09a9be8d!2sGoogle%20Melbourne!5e0!3m2!1sen!2sau!4v1632375113384!5m2!1sen!2sau"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Company Directory Portal</p>
+    </footer>
+</body>
+</html>
